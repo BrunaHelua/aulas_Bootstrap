@@ -1,0 +1,38 @@
+
+body{
+    font: 20px Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #EB984E;
+}
+
+.navpadding{
+    padding-left: 20px;
+}
+
+.exemplo1{
+    background-color: antiquewhite;
+}
+
+.margin{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.exemplo2{
+    padding-top: 30px;
+    background-color: burlywood;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+.bg-footer{
+    font: 20px Times, sans-serif;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: aliceblue;
+    padding: 10px;
+    
+}
