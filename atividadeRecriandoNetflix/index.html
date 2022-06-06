@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importante não se esquecer de informar quais páginas de estilos css o html vai usar. É possível usar VARIÁVEIS no CSS, mas precisa ser declarada dentro da raiz do documento 
+    body{
+    // declaracao normal de cor de fundo background-color: rgb(58, 15, 71);
+    // declaracao de cor de fundo usando variável background-color: var(--preto);
+}
+-->
+    <link rel="stylesheet" href="style/main.css">
+    <title>NETFLIX CLONE - MUDAR NOME DEPOIS</title>
+</head>
+<!-- Muitas vezes, os navegadores não tem config padronizadas. Importante programar de modo que o site possa ser executado independemente do navegador que usar. DAR RESET no arquivo css é um dos modos, usando *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; //garante que os elementos em tela vão ficar dentro do tamanho que o dev quis
+}. -->
+<body>
+   <div>
+       <!-- criação do menu de navegação no header - primeira coisa que o usuário pode interagir estará na parte de cima -->
+       <header>
+           <!-- Dentro da tag header, quer-se os elementos estejam apresentados na mesma linha --usar display: flex que as tags filhas h2 e nav tenham espaço entre elas.
+            header .container{
+    display: flex;
+    flex-direction: row;//default do flex, aqui só aparece para completeza
+    align-items: center;
+    justify-content: space-between;// coloca espaço entre tag-filhas do header
+}-->
+           <div class="container">
+               <h2 class="logo">NETFLIX CLONE</h2>
+               <nav>
+                   <a href="#">Início</a>
+                   <a href="#">Séries</a>
+                   <a href="#">Filmes</a>
+                   <a href="#">Documentários</a>
+               </nav>
+           </div>
+       </header>
+       <main>
+           <!-- classes wrapper, ex class="container", divs para encaixar tudo dentro de uma caixa principal. Util para não precisar configurar elementos um a um- exemplo quando uma página precisa se adaptar para mobile.-->
+           <div class="filme-principal">
+               <div class="container">
+                   <h3 class="titulofp">TRAIN TO BUSAN</h3>
+                   <p class="descricaofp">Em um trem de alta velocidade com destino à cidade de Busan, um vírus que transforma as pessoas em zumbis, se espalha. A cidade conseguiu com sucesso defender a epidemia, agora eles devem lutar pelas suas sobrevivências.</p>
+                   <!-- embora div botoes seja filha da div container, não é filha direta da tag, então podem ser aplicadas configurações diferentes nessa div, sem que seja afetada pelas configs da tag mãe. Toda div NOVA por padrão vem com display block. Filhas diretas herdam config de div mãe  -->
+                    <div class="botoes">
+                        <button role="button" class="botao">ASSISTIR AGORA</button>
+                        <button role="button" class="botao">MAIS INFORMAÇÕES</button>
+                    </div>
+                </div>
+            </div>
+       </main>
+       <footer></footer>
+   </div>
+</body>
+</html>

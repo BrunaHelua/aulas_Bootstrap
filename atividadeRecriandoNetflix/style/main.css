@@ -1,0 +1,67 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* elementos de base*/
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content sempre segue a direção do flex-direction*/
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, sans-serif;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px ;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* elementos do filme principal*/
+
+.filme-principal{
+    font-size: 15px;
+    /*Um gradiente sempre pede duas cores*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/imgs/capaBusan.jpg');
+    height: 400px;
+    /*backgroun-size: cover cobre toda a tela que a caixa ocupa*/
+    background-size: cover;
+    display: flex;
+    /*tags filhas ficam todas em ums só coluna, várias linhas*/
+    flex-direction: column;
+    justify-content: center;
+    /*o flex-start coloca os elementos no começo da tela*/
+    align-items: flex-start;
+}
+
+.filme-principal .descricaofp{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.titulofp{
+    font-size: 40px;
+}
